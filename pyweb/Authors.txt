@@ -1,0 +1,833 @@
+J.W. von Goethe
+Fyodor Dostoyevsky
+
+Marcel Proust
+
+Abbott, Eleanor Hallowell
+
+Abdullah, Achmed
+
+Adams, Andy
+
+Ade, George
+
+Aesop,
+
+Akhmatova, Anna
+
+Alcott, Louisa May
+
+Aldrich, Thomas Bailey
+
+Alger, Horatio
+
+Alighieri, Dante
+
+Altsheler, Joseph A.
+
+Andersen, Hans Christian
+
+Anderson, Sherwood
+
+Andreyev, Leonid
+
+Angelou, Maya
+
+Anonymous,
+
+Appleton, Victor
+
+Aristotle,
+
+Arthur, T.S.
+
+Asbjornsen, Peter
+
+Asimov, Isaac
+
+Assis, Joaquim Maria Machado de
+
+Atherton, Gertrude
+
+Atwood, Margaret
+
+Auden, W.H.
+
+Aumonier, Stacy
+
+Austen, Jane
+
+Bai, Li
+
+Baldwin, James
+
+Ballou, Sullivan
+
+Balzac, Honore de
+
+Barbour, Ralph Henry
+
+Barr, Robert
+
+Barrie, James M.
+
+Barton, Clara
+
+Basho, Matsuo
+
+Bastiat, Frédéric
+
+Bates, Katharine
+
+Baum, L. Frank
+
+Beach, Rex Ellingwood
+
+Bell, Nancy
+
+Bellamy, Francis
+
+Bellamy, Edward
+
+Bennett, Arnold
+
+Benson, Robert Hugh
+
+Benson, Edward
+
+beresford, John
+
+Berlin, Irving
+
+Bierce, Ambrose
+
+Bjørnson, Bjørnstjerne
+
+Blackmore, R. D.
+
+Blackwood, Algernon
+
+Blaisdell, Albert
+
+Blake, William
+
+Boccaccio, Givoanni
+
+Boswell, James
+
+Bradbury, Ray
+
+Brady, Loretta
+
+Brittain, Vera
+
+Bronte, Charlotte
+
+Bronte, Emily
+
+Brown, Fredric
+
+Browning, Robert
+
+Browning, Elizabeth
+
+Bryant, William
+
+Buck, Pearl
+
+Bunin, Ivan
+
+Bunner, Henry
+
+Bunyan, John
+
+Burnett, Frances Hodgson
+
+Burns, Robert
+
+Burr, Amelia
+
+Burroughs, Edgar Rice
+
+Butler, Ellis
+
+Byron, Lord
+
+Capote, Truman
+
+Carroll, Lewis
+
+Carryl, Guy
+
+Cather, Willa
+
+Cavendish, Margaret
+
+Cervantes, Miguel de
+
+Chambers, Robert
+
+Chambers, George F.
+
+Chaucer, Geoffrey
+
+Chekhov, Anton
+
+Chesnutt, Charles W.
+
+Chesterton, G.K.
+
+Chittenden, Gerald
+
+Chopin, Kate
+
+Christie, Agatha
+
+Clarke, Marcus
+
+Cohan, George
+
+Coleridge, Samuel
+
+Coleridge, Sara
+
+Collins, William Wilkie
+
+Collodi, Carlo
+
+Comer, Cornelia
+
+Confucius,
+
+Connell, Richard
+
+Conrad, Joseph
+
+Cooke, Grace MacGowan
+
+Cooper, James Fenimore
+
+Crane, Stephen
+
+Crevecoeur, J. Hector St. John de
+
+Crompton, Richmal
+
+Dahl, Roald
+
+Davis, Richard Harding
+
+Defoe, Daniel
+
+Dell, Ethel M.
+
+De Quincey, Thomas
+
+De Vere, Aubrey
+
+Dick, Philip
+
+Dickens, Charles
+
+Dickinson, Emily
+
+Donahey, William
+
+Donne, John
+
+Dos Passos, John
+
+Dostoevsky, Fyodor
+
+Douglass, Frederick
+
+Dowson, Ernest
+
+Doyle, Sir Arthur Conan
+
+Dreiser, Theodore
+
+Du Bois, W.E.B.
+
+Dumas, Alexandre
+
+Dumas fils, Alexandre
+
+Dunbar, Paul Laurence
+
+Dunbar-Nelson, Alice
+
+Dyer, Walter
+
+Edwards, Jonathan
+
+Edwards, Amelia Ann Blanford
+
+Eliot, George
+
+Eliot, T. S.
+
+Emerson, Ralph Waldo
+
+Emmett, Daniel
+
+Equiano, Olaudah
+
+Everett-Green, Evelyn
+
+Faulkner, William
+
+Ferber, Edna
+
+Fillmore, Parker
+
+Fisher, Dorothy
+
+Fitzgerald, F. Scott
+
+FitzGerald, Edward
+
+Flaubert, Gustave
+
+Foote, Mary Hallock
+
+Ford, Ford
+
+Forster, Edward
+
+Fox, George
+
+Franklin, Miles
+
+Franklin, Benjamin
+
+Freeman, Mary E. Wilkins
+
+Freeman, Richard
+
+Frost, Robert
+
+Fuller, Margaret
+
+Gale, Zona
+
+Galsworthy, John
+
+Gannett, Ruth
+
+Garshin, Vsevolod
+
+Gaskell, Elizabeth
+
+Ghosal, Swarnakumari
+
+Gibran, Kahlil
+
+Gilman, Charlotte Perkins
+
+Gilmore, Patrick
+
+Gissing, George
+
+Glaspell, Susan
+
+Gogol, Nikolai Vasilievich
+
+Goose, Mother
+
+Gordon, Elizabeth
+
+Gorky, Maxim
+
+Goudiss, C. Houston
+
+Grahame, Kenneth
+
+Grant, Ulysses
+
+Graves, Robert
+
+Grey, Zane
+
+Grimm, Jacob and Wilhelm
+
+Guthrie, Woody
+
+Hale, Edward Everett
+
+Haley, William
+
+Hamilton, Alexander
+
+Hardy, Thomas
+
+Harte, Bret
+
+Harvey, William Fryer
+
+Hawthorne, Nathaniel
+
+Hearn, Lafcadio
+
+Hemingway, Ernest
+
+Henry, O.
+
+Herford, Oliver
+
+Herrick, Robert
+
+Herrick, Robert Welch
+
+Hesse, Hermann
+
+Hoffmann, Ernst Theodor Wilhelm Amadeus
+
+Holmes, Mary Jane
+
+Holmes, Oliver
+
+Homer,
+
+Hopkins, Livingston
+
+Housman, A. E.
+
+Howe, Julia
+
+Howells, William Dean
+
+Hughes, Louis
+
+Hughes, Langston
+
+Hugo, Victor
+
+Hunter, Evan
+
+hurston, nora zeale
+
+Huxley, Aldous
+
+Ibsen, Henrik
+
+Irving, Washington
+
+Jackson, Shirley
+
+Jacobs, Joseph
+
+Jacobs, W. W.
+
+James, Grace
+
+James, Montague Rhodes
+
+James, Henry
+
+Janvier, Francis
+
+Jefferson, Thomas
+
+Jerome, Jerome K.
+
+Jewett, Sarah Orne
+
+Joyce, James
+
+Kafka, Franz
+
+Keats, John
+
+Kellogg, E.E.
+
+Kerouac, Jack
+
+Key, Francis
+
+Kielland, Alexander
+
+Kilmer, Joyce
+
+King, Martin Luther
+
+Kingsley, Charles
+
+Kipling, Rudyard
+
+Kronheim, Joseph Martin
+
+Kuprin, Aleksandr
+
+Lampton, William
+
+Landon, Perceval
+
+Lardner, Ring
+
+Laughead, W.B.
+
+Lawrence, D. H.
+
+Lawson, Henry
+
+Lazarus, Emma
+
+Leacock, Stephen
+
+Lear, Edward
+
+Lee, Harper
+
+Le Fanu, Joseph Sheridan
+
+Leopardi, Giacomo
+
+Leroux, Gaston
+
+Lewis, Clive Staples
+
+Lewis, Sinclair
+
+Locke, John
+
+Lofting, Hugh
+London, Jack
+
+Long, Julius
+
+Longfellow, Henry Wadsworth
+
+Loon, Henrik
+
+Lovecraft, H. P.
+
+Lowell, James
+
+Lucretius, Titus
+
+Machen, Arthur
+
+Machiavelli, Niccolo
+
+Madison, James
+
+Mansfield, Katherine
+
+Marquez, Gabriel Garcia
+
+Martin, George
+
+Maugham, William Somerset
+
+Maupassant, Guy de
+
+McCrae, John
+
+McRoberts, Walter
+
+Melville, Herman
+
+Mencken, H.L.
+
+Merimee, Prosper
+
+Miles, George
+
+Mill, John Stuart
+
+Milne, A.A.
+
+Milton, John
+
+Moliere, Jean-Baptiste
+
+Montgomery, Lucy Maud
+
+Moore, Thomas
+
+Morrow, W.C.
+
+Munro (SAKI), H.H.
+
+Nabokov, Vladimir
+
+Nesbit, Edith
+
+Nietzsche, Friedrich
+
+Nightingale, Florence
+
+Nights, Arabian
+
+Norris, Kathleen
+
+Norris, Frank
+
+Northup, Solomon
+
+Norton, Caroline
+
+O'Brien, Fitz-James
+
+O'Connor, Flannery
+
+O'Flaherty, Liam
+
+O'Keefe, James
+
+O'Neill, Eugene
+
+Orwell, George
+
+Ovid, Publius
+
+Owen, Wilfred
+
+Page, Thomas Nelson
+
+Paine, Thomas
+
+Parker, Dorothy
+
+Paterson, Banjo
+
+Peattie, Elia W.
+
+Pepys, Samuel
+
+Perrault, Charles
+
+Phelps, Elizabeth
+
+Pierson, Clara
+
+Plato,
+
+Poe, Edgar Allan
+
+Polidori, John
+
+Pope, Alexander
+
+Porter, Katherine
+
+Post, Melville Davisson
+
+Potter, Beatrix
+
+Pound, Ezra
+
+Prevost, Marcel
+
+Pushkin, Alexsander
+
+Pyle, Howard
+
+Quiller-Couch, Arthur
+
+Rand, Ayn
+
+Richards, Laura E.
+
+Rickford, Katherine
+
+Riley, James
+
+Rinehart, Mary Roberts
+
+Roe, Edward Payson
+
+Root, George
+
+Rosenberg, Isaac
+
+Rowling, J.K.
+
+Russell, Bertrand
+
+Saha, Arnaba
+
+Salinger, J.D.
+
+Sandburg, Carl
+
+Sayers, Dorothy
+
+Scott, Walter
+
+Semyonov, S.T.
+
+Sewell, Anna
+
+Shakespeare, William
+
+Shaw, Bernard
+
+Shelley, Mary
+
+Shelley, Percy Bysshe
+
+Sherman, Harold
+
+Shiel, Matthew Phipps
+
+Shorter, Dora
+
+Sinclair, Upton
+
+Smith, Adam
+
+Smith, Samuel
+
+Smith, Clark
+
+Sophocles,
+
+Sousa, John
+
+Spofford, Harriet
+
+Spyri, Johanna
+
+Steele, Wilbur Daniel
+
+Stein, Gertrude
+
+Steinbeck, John
+
+Stephenson, Carl
+
+Stevenson, Robert Louis
+
+Stine, Robert
+
+Stockton, Frank
+
+Stoker, Bram
+
+Stowe, Harriet Beecher
+
+Strachey, Lytton
+
+Stratemeyer, Edward
+
+Stuart, Jesse
+
+Stuart, Ruth
+
+St. Vincent Millay, Edna
+
+Sweetser, Kate Dickinson
+
+Swift, Jonathan
+
+Syrett, Netta
+
+Tagore, Rabindranath
+
+Tarbell, Ida
+
+Tarkington, Newton Booth
+
+Teasdale, Sara
+
+Tennyson, Alfred
+
+Thackeray, William Makepeace
+
+Thayer, Ernest Lawrence
+
+Thomas, Dylan
+
+Thoreau, Henry David
+
+Tocqueville, Alexis
+
+Tolkien, John Ronald Reuel
+
+Tolstoy, Alexei
+
+Tolstoy, Leo
+
+Travers, Pamela
+
+Trollope, Anthony
+
+Tupper, Tristram
+
+Turgenev, Ivan S.
+
+Turner, Ethel
+
+Twain, Mark
+
+Tzu, Sun
+
+van Dyke, Henry
+
+Verne, Jules
+
+Voltaire,
+
+Vonnegut, Kurt
+
+Wallace, Edgar
+
+Walpole, Horace
+
+Washington, Booker T.
+
+Weaver, Louise Bennett
+
+Wells, H.G.
+
+Wells, Ida
+
+Wharton, Edith
+
+Wharton, Anne Hollingsworth
+
+Wheatley, Phillis
+
+White, Stewart Edward
+
+White, E.B.
+
+Whitman, Walt
+
+Whittier, John
+
+Widdemer, Margaret
+
+Wiggin, Kate Douglas
+
+Wilcox, Ella
+
+Wilde, Oscar
+
+Williams, Margery
+
+Williams, William Carlos
+
+Wodehouse, P. G.
+
+Wolff, Tobias
+
+Wollstonecraft, Mary
+
+Woolf, Virginia
+
+Wordsworth, William
+
+Wynne, Madeline
+
+Wyss, Johann David
+
+Yeats, William Butler
+
+Yezierska, Anzia
+
+Yonge, Charlotte M.
+
+Zola, Emile

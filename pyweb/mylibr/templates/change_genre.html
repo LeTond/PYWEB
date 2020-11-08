@@ -1,0 +1,52 @@
+<!-- templates/change_genre.html -->
+
+{% extends 'base.html' %}
+
+{% block tittle %}Change Genre{% endblock %}
+
+{% block content %}
+
+<div class="block4">
+    <form action="{% url 'change-genre' %}" method="get">
+        <input class="search" name="q2" type="text" placeholder="Search genre...">
+            <input class="search2" type="submit" value="Find">
+    </form>
+</div><br>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Genre</th>
+        <th></th>
+    </tr>
+
+    {% for genre in genre_list %}
+        <tr>
+            <td>{{ genre.id }}</td>
+            <td>{{ genre.name }}</td>
+            <td><a href="edit_genre/{{ genre.id }}">Change</a> | <a href="delete_genre/{{ genre.id }}">Delete</a></td>
+        </tr>
+    {% endfor %}
+</table>
+
+<div class="pag">
+    {% if genre_list.has_other_pages %}
+        <ul class="pagination">
+            {% if genre_list.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ genre_list.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ genre_list.number }} of {{ genre_list.paginator.num_pages }}.
+            </span>
+
+            {% if genre_list.has_next %}
+                <a href="?page={{ genre_list.next_page_number }}">next</a>
+                <a href="?page={{ genre_list.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </ul>
+    {% endif %}
+</div>
+
+{% endblock %}

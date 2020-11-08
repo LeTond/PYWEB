@@ -1,0 +1,148 @@
+body {
+    background-image: url('/static/img/book.gif');
+    background-attachment: fixed, scroll;
+    background-repeat: repeat-y, repeat-y;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+}
+
+.add {
+    position: absolute;
+    left: 300px;
+    top: 70px;
+    width: 60%;
+    background: bisque;
+    opacity: 0.9;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 15pt;
+    color: black;
+    border: 3px solid #666;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.block1 {
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    background: bisque;
+    width: 60%;
+    opacity: 0.9;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.block2 {
+    background: coral;
+    margin: auto;
+    padding-left: 40%;
+    font-size: 150%;
+    font-weight: bolder;
+    opacity: 0.9;
+    border: 2px solid #666;
+    border-radius: 2%/25%;
+    font-family: 'Times New Roman', Times, sans-serif;
+    color: yellow;
+    box-sizing: border-box;
+}
+
+.block3 {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    width: 60%;
+    background: coral;
+    padding-left: 25%;
+    font-size: 150%;
+    font-weight: bolder;
+    opacity: 0.9;
+    border: 2px solid #666;
+    border-radius: 2%/25%;
+    font-family: 'Times New Roman', Times, sans-serif;
+    color: yellow;
+    box-sizing: border-box;
+}
+
+.block4 {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    width: 60%;
+    background: coral;
+    padding-left: 3%;
+    font-size: 150%;
+    font-weight: bolder;
+    opacity: 0.9;
+    border: 2px solid #666;
+    border-radius: 2%/25%;
+    font-family: 'Times New Roman', Times, sans-serif;
+    color: yellow;
+    box-sizing: border-box;
+}
+
+.block_hip {
+    position: absolute;
+    background: coral;
+    left: 50px;
+    top: 10px;
+    width: 220px;
+    padding-left: 2%;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    font-size: larger;
+    font-weight: bolder;
+    opacity: 0.9;
+    border: 2px solid #666;
+    border-radius: 15%/5%;
+    font-family: 'Times New Roman', Times, sans-serif;
+    box-sizing: border-box;
+}
+
+.table {
+    position: absolute;
+    left: 300px;
+    top: 70px;
+    width: 60%;
+    background: bisque;
+    opacity: 0.9;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 15pt;
+    color: black;
+    border: 3px solid #666;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.pag {
+    position: absolute;
+    left: 300px;
+    top: 650px;
+    width: 60%;
+    background: bisque;
+    opacity: 0.9;
+    text-align: center;
+    border: 3px solid #666; /* Параметры рамки */
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+a {
+color: blue;
+text-decoration:none
+}
+
+a:active {
+color:yellow;
+text-decoration:none
+}
+
+a:visited {
+color: darkgreen;
+text-decoration:none
+}
+
+a:hover {
+color: yellow;
+text-decoration: underline
+}

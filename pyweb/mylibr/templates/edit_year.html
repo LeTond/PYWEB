@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block tittle %}Change Year{% endblock %}
+
+{% block content %}
+    <div class="block3"><div>Edit Year</div></div><br>
+
+<div class="block1">
+    <form method="POST">
+        {% csrf_token %}
+        <p><label>Введите год публикации</label><br>
+            <input type="text" name="name" value="{{ year.name }}"/></p>
+        <p><input type="submit" value="Сохранить"></p>
+    </form>
+</div>
+{% endblock %}
+

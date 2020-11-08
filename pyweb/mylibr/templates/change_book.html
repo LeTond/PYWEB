@@ -1,0 +1,48 @@
+<!-- templates/change_book.html -->
+
+{% extends 'base.html' %}
+
+{% block tittle %}Change Library{% endblock %}
+
+{% block content %}
+
+<div class="block4">
+    <form action="{% url 'search_results' %}" method="get">
+        <input class="search" name="q" type="text" placeholder="Search book...">
+            <input class="search2" type="submit" value="Find">
+    </form>
+</div><br>
+
+<div class="add">
+    <form action="{% url 'add-book' %}" method="POST">
+        {% csrf_token %}
+        <label>Enter book name</label><br>
+        {{ book_form.as_p }}
+        <button type="submit">Create Book</button>
+    </form><br/><br/>
+
+    <form method="POST" action="change_author/">
+        {% csrf_token %}
+            <label>Enter author name</label><br>
+            <input type="text" name="name" />
+        <input type="submit" value="Добавить" >
+    </form>
+
+    <form method="POST" action="change_genre/">
+        {% csrf_token %}
+            <label>Enter genre name</label><br>
+            <input type="text" name="name" />
+        <input type="submit" value="Добавить" >
+    </form>
+
+    <form method="POST" action="change_year/">
+        {% csrf_token %}
+            <label>Enter year</label><br>
+            <input type="text" name="name" />
+        <input type="submit" value="Добавить" >
+    </form><br>
+</div>
+
+{% endblock %}
+
+

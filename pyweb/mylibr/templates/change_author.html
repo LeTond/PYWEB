@@ -1,0 +1,57 @@
+<!-- templates/change_author.html -->
+
+{% extends 'base.html' %}
+
+{% block tittle %}Change Author{% endblock %}
+
+{% block content %}
+
+<div class="block4">
+    <form action="{% url 'change-author' %}" method="get">
+        <input class="search" name="q1" type="text" placeholder="Search author...">
+            <input class="search2" type="submit" value="Find">
+    </form>
+</div><br>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Author</th>
+        <th></th>
+    </tr>
+{% for author in author_list %}
+    <tr>
+        <td>{{ author.id }}</td>
+        <td>{{ author.name }}</td>
+        <td><a href="edit_author/{{ author.id }}">Change</a> | <a href="delete_author/{{ author.id }}">Delete</a></td>
+    </tr>
+{% endfor %}
+</table>
+
+
+<div class="pag">
+    {% if author_list.has_other_pages %}
+        <ul class="pagination">
+            {% if author_list.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ author_list.previous_page_number }}">previous</a>
+                {% endif %}
+
+            {% for i in author_list.paginator.page_range %}
+                        <a href="?page={{ i }}">{{ i }}</a>
+            {% endfor %}
+
+            <span class="current">
+                Page {{ author_list.number }} of {{ author_list.paginator.num_pages }}.
+            </span>
+
+            {% if author_list.has_next %}
+                <a href="?page={{ author_list.next_page_number }}">next</a>
+                <a href="?page={{ author_list.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </ul>
+    {% endif %}
+</div>
+{% endblock %}
+

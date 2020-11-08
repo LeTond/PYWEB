@@ -1,0 +1,54 @@
+<!-- templates/base.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block tittle %}Library{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static "img/favicon.png" %}"/>
+</head>
+
+<body>
+<div>
+
+{% block content %}
+
+<div class="block4">
+    <form method="POST" action="">
+        {% csrf_token %}
+            <input type="text" name="name" />
+        <input type="submit" value="HOME" >
+    </form><br>
+
+    <form action="{% url 'search_results' %}" method="get">
+        <label class="lab">Search in library</label>
+        <input class="search" name="q" type="text" placeholder="Search book...">
+        <input class="search2" type="submit" value="Find">
+    </form>
+</div>
+
+{% endblock %}
+
+<div class="block_hip">
+    <p><a href="{% url 'index' %}">Home</a></p>
+    <p><a href="{% url 'add-book' %}">Change Library</a></p>
+    <p><a href="{% url 'search_results' %}">Show library</a></p>
+    <p><a href="{% url 'change-author' %}">Show Author List</a></p>
+    <p><a href="{% url 'change-genre' %}">Show Genre List</a></p>
+    <p><a href="{% url 'change-year' %}">Show Year List</a></p>
+</div>
+
+
+</div><br>
+</body>
+</html>
+
+
+{#{% block content %}#}
+{#<body>#}
+{##}
+{#</body>#}
+{#{% endblock %}#}

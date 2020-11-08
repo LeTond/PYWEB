@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block tittle %}Change Genre{% endblock %}
+
+{% block content %}
+    <div class="block3"><div>Edit Genre</div></div><br>
+
+<div class="block1">
+    <form method="POST">
+        {% csrf_token %}
+        <p><label>Введите название жанра</label><br>
+            <input type="text" name="name" value="{{ genre.name }}"/></p>
+        <p><input type="submit" value="Сохранить"></p>
+    </form>
+</div>
+{% endblock %}
+
