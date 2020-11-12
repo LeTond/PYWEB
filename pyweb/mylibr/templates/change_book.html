@@ -16,7 +16,7 @@
 <div class="add">
     <form action="{% url 'add-book' %}" method="POST">
         {% csrf_token %}
-        <label>Enter book name</label><br>
+        <label>Create new book</label><br>
         {{ book_form.as_p }}
         <button type="submit">Create Book</button>
     </form><br/><br/>
@@ -35,12 +35,6 @@
         <input type="submit" value="Добавить" >
     </form>
 
-    <form method="POST" action="change_year/">
-        {% csrf_token %}
-            <label>Enter year</label><br>
-            <input type="text" name="name" />
-        <input type="submit" value="Добавить" >
-    </form><br>
 </div>
 
 {% endblock %}

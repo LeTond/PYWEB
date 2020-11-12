@@ -24,7 +24,19 @@
     <tr>
         <td>{{ author.id }}</td>
         <td>{{ author.name }}</td>
-        <td><a href="edit_author/{{ author.id }}">Change</a> | <a href="delete_author/{{ author.id }}">Delete</a></td>
+
+{#        <td><a href="edit_author/{{ author.id }}">Change</a> | <a href="delete_author/{{ author.id }}">Delete</a></td>#}
+
+        <td><form action="{% url 'edit-author' author_id=author.id %}" method="GET">
+            {% csrf_token %}
+            <input type="submit" value="Edit">
+        </form></td>
+
+        <td><form action="{% url 'delete-author' author_id=author.id %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="Delete">
+        </form></td>
+
     </tr>
 {% endfor %}
 </table>

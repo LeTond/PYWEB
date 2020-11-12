@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import Textarea
 
-from .models import Book, Author, Genre, Year
+from .models import Book, Author, Genre
 
 
 class BookForm(forms.Form):
@@ -39,9 +39,3 @@ class GenreModelForm(forms.ModelForm):
         widgets = {
             'name': Textarea(attrs={'cols': 40, 'rows': 1}),
         }
-
-
-class YearModelForm(forms.ModelForm):
-    class Meta:
-        model = Year
-        exclude = ["id"]

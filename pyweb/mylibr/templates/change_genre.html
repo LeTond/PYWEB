@@ -24,7 +24,19 @@
         <tr>
             <td>{{ genre.id }}</td>
             <td>{{ genre.name }}</td>
-            <td><a href="edit_genre/{{ genre.id }}">Change</a> | <a href="delete_genre/{{ genre.id }}">Delete</a></td>
+
+{#            <td><a href="edit_genre/{{ genre.id }}">Change</a> | <a href="delete_genre/{{ genre.id }}">Delete</a></td>#}
+
+            <td><form action="{% url 'edit-genre' genre_id=genre.id %}" method="GET">
+                {% csrf_token %}
+                <input type="submit" value="Edit">
+              </form></td>
+
+            <td><form action="{% url 'delete-genre' genre_id=genre.id %}" method="POST">
+                {% csrf_token %}
+                <input type="submit" value="Delete">
+              </form></td>
+
         </tr>
     {% endfor %}
 </table>

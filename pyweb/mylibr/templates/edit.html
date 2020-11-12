@@ -16,6 +16,11 @@
     </p>
 
     <p>
+        <label>Введите год публикации</label><br>
+        <input type="text" name="year" value="{{ book.year }}"/>
+    </p>
+
+    <p>
         <label>Выберите автора</label><br>
         <select id="auth" name="author" onChange="redirectUrl()">
             {% for auth in author %}
@@ -34,18 +39,6 @@
                 <option name="genre" value="{{ g.id }}">
                     {% if g == current_g %}selected="selected"{% endif %}>
                     {{ g.name }}
-                </option>
-            {% endfor %}
-        </select>
-    </p>
-
-    <p>
-        <label>Выберите год публикации</label><br>
-        <select id="year" name="year" onChange="redirectUrl()">
-            {% for e in year %}
-                <option name="year" value="{{ e.id }}">
-                    {% if e == current_e %}selected="selected"{% endif %}>
-                    {{ e.name }}
                 </option>
             {% endfor %}
         </select>

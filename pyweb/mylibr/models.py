@@ -23,23 +23,23 @@ class Genre(models.Model):
         ordering = ["name"]
 
 
-class Year(models.Model):
-    id = models.IntegerField(primary_key=True)
-    name = models.IntegerField(blank=True)
-
-    def __str__(self):
-        return f"{self.name} || id: {self.id}"
-
-    class Meta:
-        ordering = ["name"]
+# class Year(models.Model):
+#     id = models.IntegerField(primary_key=True)
+#     name = models.IntegerField(blank=True)
+#
+#     def __str__(self):
+#         return f"{self.name} || id: {self.id}"
+#
+#     class Meta:
+#         ordering = ["name"]
 
 
 class Book(models.Model):
     id = models.IntegerField(primary_key=True)
     name = models.TextField()
+    year = models.IntegerField()
     author = models.ForeignKey(Author, related_name='author', on_delete=models.CASCADE, null=True)
     genre = models.ForeignKey(Genre, related_name='genre', on_delete=models.CASCADE, null=True)
-    year = models.ForeignKey(Year, related_name='year', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return f"{self.id} -- {self.name} // {self.author.name} // {self.genre.name} // {self.year.name}"

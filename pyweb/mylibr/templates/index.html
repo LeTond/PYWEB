@@ -1,6 +1,5 @@
 <!-- templates/index.html -->
 
-<!-- templates/base.html -->
 {% load static %}
 
 <!DOCTYPE html>
@@ -13,6 +12,7 @@
 </head>
 
 <body>
+
 {% block content %}
 
 <div class="block4">
@@ -22,22 +22,15 @@
         <input class="search2" type="submit" value="Find">
     </form>
 </div><br>
+
 {% endblock %}
+
     <div class="block_hip">
         <p><a href="{% url 'index' %}">Home</a></p>
         <p><a href="{% url 'add-book' %}">Change Library</a></p>
         <p><a href="{% url 'search_results' %}">Show library</a></p>
         <p><a href="{% url 'change-author' %}">Show Author List</a></p>
         <p><a href="{% url 'change-genre' %}">Show Genre List</a></p>
-        <p><a href="{% url 'change-year' %}">Show Year List</a></p>
     </div><br>
 </body>
-
 </html>
-
-
-{#{% block content %}#}
-{#<body>#}
-{##}
-{#</body>#}
-{#{% endblock %}#}

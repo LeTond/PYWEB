@@ -13,7 +13,6 @@
     </form>
 </div><br>
 
-{#<div id="wrapper">#}
 <table class="table table-bordered">
     <tr>
         <th>ID</th>
@@ -31,13 +30,27 @@
             <td>{{ book.name }}</td>
             <td>{{ book.author.name }}</td>
             <td>{{ book.genre.name }}</td>
-            <td>{{ book.year.name }}</td>
+            <td>{{ book.year }}</td>
             <td>__</td>
-            <td><a href="edit/{{ book.id }}">Change</a> | <a href="delete/{{ book.id }}">Delete</a></td>
+
+{#            <td><a href="search_edit/{{ book.id }}">Change</a> | <a href="search_delete/{{ book.id }}">Delete</a></td>#}
+
+            <td><form action="{% url 'edit-book' book_id=book.id %}" method="GET">
+                {% csrf_token %}
+                <input type="submit" value="Edit">
+              </form></td>
+
+            <td><form action="{% url 'delete-book' book_id=book.id %}" method="POST">
+                {% csrf_token %}
+                <input type="submit" value="Delete">
+              </form></td>
         </tr>
+
     {% endfor %}
+
 </table>
-<div class="pag">
+
+    <div class="pag">
     {% if book_list.has_other_pages %}
         <ul class="pagination">
             {% if book_list.has_previous %}
@@ -61,33 +74,13 @@
     {% endif %}
 </div>
 
-{#</div>#}
-
 {% endblock %}
 
 
-{#<div class="pag">#}
-{#    {% if book_list.has_other_pages %}#}
-{#        <ul class="pagination">#}
-{#            {% if book_list.has_previous %}#}
-{#                <a href="?page=1">&laquo; first</a>#}
-{#                <a href="?page={{ book_list.previous_page_number }}">previous</a>#}
-{#            {% endif %}#}
-{##}
-{#            <span class="current">#}
-{#                Page {{ book_list.number }} of {{ book_list.paginator.num_pages }}.#}
-{#            </span>#}
-{##}
-{#            {% if book_list.has_next %}#}
-{#                <a href="?page={{ book_list.next_page_number }}">next</a>#}
-{#                <a href="?page={{ book_list.paginator.num_pages }}">last &raquo;</a>#}
-{#            {% endif %}#}
-{#        </ul>#}
-{#    {% endif %}#}
-{#</div>#}
 
 
 
 
-
+{#            <td><a href="edit/{{ book.id }}">Change</a> | <a href="delete/{{ book.id }}">Delete</a></td>#}
+{#            <td><a href="{% url 'edit-book'  'book.views.delete' id=book.id %}">Change</a> | <a href="{% url 'delete-book' id=book.id %}">Delete</a></td>#}
 
