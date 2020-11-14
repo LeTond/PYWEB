@@ -1,7 +1,9 @@
 from django.urls import path
 
 from .views import IndexView, BookFormView, \
-    AuthorFormView, GenreFormView, BookView, AuthorView, GenreView
+    AuthorFormView, GenreFormView, BookView, AuthorView, \
+    GenreView, BookEditView, BookDeleteView, AuthorDeleteView, \
+    AuthorEditView, GenreDeleteView, GenreEditView
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
@@ -14,14 +16,14 @@ urlpatterns = [
     path('author_form/', AuthorView.as_view(), name='change-author'),
     path('genre_form/', GenreView.as_view(), name='change-genre'),
 
-    path('search_edit/<int:book_id>/', BookView.edit, name='edit-book'),
-    path('search_delete/<int:book_id>/', BookView.delete, name='delete-book'),
+    path('search_edit/<int:book_id>/', BookEditView.as_view(), name='edit-book'),
+    path('search_delete/<int:book_id>/', BookDeleteView.as_view(), name='delete-book'),
 
-    path('author_delete/<int:author_id>/', AuthorView.delete, name='delete-author'),
-    path('author_edit/<int:author_id>/', AuthorView.edit, name='edit-author'),
+    path('author_delete/<int:author_id>/', AuthorDeleteView.as_view(), name='delete-author'),
+    path('author_edit/<int:author_id>/', AuthorEditView.as_view(), name='edit-author'),
 
-    path('genre_delete/<int:genre_id>/', GenreView.delete, name='delete-genre'),
-    path('genre_edit/<int:genre_id>/', GenreView.edit, name='edit-genre'),
+    path('genre_delete/<int:genre_id>/', GenreDeleteView.as_view(), name='delete-genre'),
+    path('genre_edit/<int:genre_id>/', GenreEditView.as_view(), name='edit-genre'),
 ]
 
 

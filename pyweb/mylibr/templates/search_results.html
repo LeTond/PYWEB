@@ -33,8 +33,6 @@
             <td>{{ book.year }}</td>
             <td>__</td>
 
-{#            <td><a href="search_edit/{{ book.id }}">Change</a> | <a href="search_delete/{{ book.id }}">Delete</a></td>#}
-
             <td><form action="{% url 'edit-book' book_id=book.id %}" method="GET">
                 {% csrf_token %}
                 <input type="submit" value="Edit">
@@ -75,12 +73,3 @@
 </div>
 
 {% endblock %}
-
-
-
-
-
-
-{#            <td><a href="edit/{{ book.id }}">Change</a> | <a href="delete/{{ book.id }}">Delete</a></td>#}
-{#            <td><a href="{% url 'edit-book'  'book.views.delete' id=book.id %}">Change</a> | <a href="{% url 'delete-book' id=book.id %}">Delete</a></td>#}
-

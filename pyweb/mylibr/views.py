@@ -43,8 +43,7 @@ class IndexView(View):
 
 class BookView(View):
 
-    @staticmethod
-    def get(request):
+    def get(self, request):
         query = request.GET.get('q')
         page_num = request.GET.get('page', 1)
         if query is not None:
@@ -64,32 +63,34 @@ class BookView(View):
         context = {'book_list': page}
         return render(request, 'search_results.html', context)
 
-    @staticmethod
-    def edit(request, book_id):
+
+class BookEditView(View):
+    def get(self, request, book_id):
         try:
             book = Book.objects.get(id=book_id)
             author = Author.objects.all()
             genre = Genre.objects.all()
-
-            if request.method == "POST":
-                book.name = request.POST.get("name")
-                book.year = request.POST.get("year")
-                book.author_id = request.POST.get("author")
-                book.genre_id = request.POST.get("genre")
-                book.save()
-                book_list = Book.objects.filter(id=book_id)
-                context = {'book_list': book_list}
-                return render(request, 'search_results.html', context)
-            else:
-                return render(request, "edit.html", {"book": book,
-                                                     "genre": genre,
-                                                     "author": author}
-                              )
+            return render(request, "edit.html", {"book": book,
+                                                 "genre": genre,
+                                                 "author": author}
+                          )
         except Book.DoesNotExist:
-            return HttpResponseNotFound("<h2>Book not found</h2>")
+            return render(request, 'search_results.html')
 
-    @staticmethod
-    def delete(request, book_id):
+    def post(self, request, book_id):
+        book = Book.objects.get(id=book_id)
+        book.name = request.POST.get("name")
+        book.year = request.POST.get("year")
+        book.author_id = request.POST.get("author")
+        book.genre_id = request.POST.get("genre")
+        book.save()
+        book_list = Book.objects.filter(id=book_id)
+        context = {'book_list': book_list}
+        return render(request, 'search_results.html', context)
+
+
+class BookDeleteView(View):
+    def post(self, request, book_id):
         try:
             Book.objects.get(id=book_id).delete()
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
@@ -98,31 +99,32 @@ class BookView(View):
 
 
 class AuthorView(View):
-
-    @staticmethod
-    def get(request):
+    def get(self, request):
         query = request.GET.get('q1')
         page = common_search(request, Author, query)
         context = {'author_list': page}
         return render(request, 'change_author.html', context)
 
-    @staticmethod
-    def edit(request, author_id):
+
+class AuthorEditView(View):
+    def get(self, request, author_id):
         try:
             author = Author.objects.get(id=author_id)
-            if request.method == "POST":
-                author.name = request.POST.get("name")
-                author.save()
-                author_list = Author.objects.filter(id=author_id)
-                context = {'author_list': author_list}
-                return render(request, "change_author.html", context)
-            else:
-                return render(request, "edit_author.html", {"author": author})
+            return render(request, "edit_author.html", {"author": author})
         except Author.DoesNotExist:
-            return HttpResponseNotFound("<h2>Author not found</h2>")
+            return render(request, 'change_author.html')
 
-    @staticmethod
-    def delete(request, author_id):
+    def post(self, request, author_id):
+        author = Author.objects.get(id=author_id)
+        author.name = request.POST.get("name")
+        author.save()
+        author_list = Author.objects.filter(id=author_id)
+        context = {'author_list': author_list}
+        return render(request, "change_author.html", context)
+
+
+class AuthorDeleteView(View):
+    def post(self, request, author_id):
         try:
             Author.objects.get(id=author_id).delete()
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
@@ -131,31 +133,32 @@ class AuthorView(View):
 
 
 class GenreView(View):
-
-    @staticmethod
-    def get(request):
+    def get(self, request):
         query = request.GET.get('q2')
         page = common_search(request, Genre, query)
         context = {'genre_list': page}
         return render(request, 'change_genre.html', context)
 
-    @staticmethod
-    def edit(request, genre_id):
+
+class GenreEditView(View):
+    def get(self, request, genre_id):
         try:
             genre = Genre.objects.get(id=genre_id)
-            if request.method == "POST":
-                genre.name = request.POST.get("name")
-                genre.save()
-                genre_list = Genre.objects.filter(id=genre_id)
-                context = {"genre_list": genre_list}
-                return render(request, "change_genre.html", context)
-            else:
-                return render(request, "edit_genre.html", {"genre": genre})
+            return render(request, "edit_genre.html", {"genre": genre})
         except Genre.DoesNotExist:
-            return HttpResponseNotFound("<h2>Genre not found</h2>")
+            return render(request, 'change_genre.html')
 
-    @staticmethod
-    def delete(request, genre_id):
+    def post(self, request, genre_id):
+        genre = Genre.objects.get(id=genre_id)
+        genre.name = request.POST.get("name")
+        genre.save()
+        genre_list = Genre.objects.filter(id=genre_id)
+        context = {"genre_list": genre_list}
+        return render(request, "change_genre.html", context)
+
+
+class GenreDeleteView(View):
+    def post(self, request, genre_id):
         try:
             Genre.objects.get(id=genre_id).delete()
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

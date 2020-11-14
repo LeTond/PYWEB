@@ -23,17 +23,6 @@ class Genre(models.Model):
         ordering = ["name"]
 
 
-# class Year(models.Model):
-#     id = models.IntegerField(primary_key=True)
-#     name = models.IntegerField(blank=True)
-#
-#     def __str__(self):
-#         return f"{self.name} || id: {self.id}"
-#
-#     class Meta:
-#         ordering = ["name"]
-
-
 class Book(models.Model):
     id = models.IntegerField(primary_key=True)
     name = models.TextField()
