@@ -10,41 +10,33 @@
     <form method="POST">
         {% csrf_token %}
 
-    <p>
-        <label>Введите название книги</label><br>
-        <input type="text" name="name" value="{{ book.name }}"/>
-    </p>
+    <p><label>Введите название книги</label><br>
+        <input type="text" name="name" value="{{ book.name }}"/></p>
 
-    <p>
-        <label>Введите год публикации</label><br>
-        <input type="text" name="year" value="{{ book.year }}"/>
-    </p>
+    <p><label>Введите год публикации</label><br>
+        <input type="text" name="year" value="{{ book.year }}"/></p>
 
-    <p>
-        <label>Выберите автора</label><br>
+    <p><label>Выберите автора</label><br>
         <select id="auth" name="author" onChange="redirectUrl()">
             {% for auth in author %}
-                <option name="author" value="{{ auth.id }}">
-                    {% if auth == current_auth %}selected="selected"{% endif %}>
+                <option name="author" value="{{ auth.id }}"
+                    {% if auth.id == book.author.id %}selected="selected"{% endif %}>
                     {{ auth.name }}
                 </option>
             {% endfor %}
-        </select>
-    </p>
+        </select></p>
 
-    <p>
-        <label>Выберите жанр</label><br>
+    <p><label>Выберите жанр</label><br>
         <select id="genre" name="genre" onChange="redirectUrl()">
             {% for g in genre %}
-                <option name="genre" value="{{ g.id }}">
-                    {% if g == current_g %}selected="selected"{% endif %}>
+                <option name="genre" value="{{ g.id }}"
+                    {% if g.id == book.genre.id %}selected="selected"{% endif %}>
                     {{ g.name }}
                 </option>
             {% endfor %}
-        </select>
-    </p>
+        </select></p>
 
-        <input type="submit" value="Сохранить">
+    <input type="submit" value="Сохранить">
 
     </form>
 </div><br>

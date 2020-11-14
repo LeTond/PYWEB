@@ -24,3 +24,4 @@ urlpatterns = [
     path('genre_edit/<int:genre_id>/', GenreView.edit, name='edit-genre'),
 ]
 
+
